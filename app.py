@@ -3,7 +3,70 @@ import os
 import time
 
 st.set_page_config(page_title="Play and Win", page_icon="🎮", layout="centered")
-
+# --- PROFESSIONAL BEAUTIFICATION ---
+st.markdown("""
+<style>
+    /* Background - beautiful gradient */
+    .stApp {
+        background: linear-gradient(135deg, #1a0033 0%, #4a0080 50%, #ff6600 100%);
+        background-attachment: fixed;
+    }
+    /* All text white */
+    h1, h2, h3, p, label, span {
+        color: white !important;
+        text-align: center;
+    }
+    /* Title glow */
+    h1 {
+        font-size: 48px !important;
+        font-weight: 900 !important;
+        text-shadow: 0px 0px 20px #FFD700;
+        font-family: 'Arial Black', sans-serif;
+    }
+    /* Subtitle */
+    h3 {
+        color: #FFD700 !important;
+        font-size: 22px !important;
+    }
+    /* Buttons - big, round, gold */
+    .stButton > button {
+        background: linear-gradient(90deg, #FFD700, #FF8C00) !important;
+        color: black !important;
+        font-size: 20px !important;
+        font-weight: bold !important;
+        border-radius: 30px !important;
+        padding: 12px 30px !important;
+        border: none !important;
+        box-shadow: 0px 5px 20px rgba(255,215,0,0.5);
+        width: 100%;
+    }
+    .stButton > button:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 30px rgba(255,215,0,0.8);
+    }
+    /* Radio / Options - white cards */
+    .stRadio > div {
+        background: rgba(255,255,255,0.95);
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .stRadio label {
+        color: black !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+    }
+    /* Input boxes */
+    .stTextInput > div > div > input {
+        border-radius: 15px !important;
+        font-size: 18px !important;
+        text-align: center;
+    }
+    /* Progress bar */
+    .stProgress > div > div {
+        background: #FFD700 !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 # --- LOGO FOR TOP OF SITE ---
 if os.path.exists("logo.jpg"):
     st.image("logo.jpg", width=250)
