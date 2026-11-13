@@ -44,17 +44,19 @@ st.markdown("""
         transform: scale(1.05);
         box-shadow: 0px 8px 30px rgba(255,215,0,0.8);
     }
-    /* Radio / Options - white cards */
-    .stRadio > div {
-        background: rgba(255,255,255,0.95);
-        padding: 15px;
-        border-radius: 15px;
+        /* FIX - Options box - make answers BLACK and visible */
+    div[data-testid="stRadio"] > div {
+        background: white !important;
+        padding: 18px !important;
+        border-radius: 15px !important;
     }
-    .stRadio label {
+    div[data-testid="stRadio"] label {
         color: black !important;
-        font-size: 18px !important;
-        font-weight: 600 !important;
     }
+    div[data-testid="stRadio"] label p {
+        color: black !important;
+        font-size: 22px !important;
+        font-weight: bold !
     /* Input boxes */
     .stTextInput > div > div > input {
         border-radius: 15px !important;
