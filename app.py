@@ -9,7 +9,7 @@ if os.path.exists("logo.jpg"):
     st.image("logo.jpg", width=250)
 
 st.markdown("<h1 style='text-align:center;'>🎮 Play and Win</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align:center;'>Educative Game - Answer, Learn & Win!</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align:center;'>Educational Game - Answer, Learn & Win!</h3>", unsafe_allow_html=True)
 st.markdown("""
 <div style="text-align:center; background-color:white; padding:15px; border-radius:15px;">
     <p>👋 <b>Hello Explorer!</b></p>
