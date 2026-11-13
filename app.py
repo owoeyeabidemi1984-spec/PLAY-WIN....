@@ -1,8 +1,22 @@
+import streamlit as st
+import os
 import time
 
-import streamlit as st
+st.set_page_config(page_title="Play and Win", page_icon="🎮", layout="centered")
 
-st.set_page_config(page_title="Knowledge Quest", page_icon="🧭", layout="centered")
+# --- LOGO FOR TOP OF SITE ---
+if os.path.exists("logo.jpg"):
+    st.image("logo.jpg", width=250)
+
+st.markdown("<h1 style='text-align:center;'>🎮 Play and Win</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align:center;'>Educative Game - Answer, Learn & Win!</h3>", unsafe_allow_html=True)
+st.markdown("""
+<div style="text-align:center; background-color:white; padding:15px; border-radius:15px;">
+    <p>👋 <b>Hello Explorer!</b></p>
+    <p>Answer questions, earn coins ⭐, collect badges 🏅 and win!</p>
+    <p><b>Are you ready? Start NOW! 🚀</b></p>
+</div>
+""", unsafe_allow_html=True)
 
 # --- Settings ---
 TIME_LIMIT = 30 * 60  # 30 minutes in seconds
