@@ -87,7 +87,7 @@ MAX_LIVES = 3
 PASS_MARK = 4
 
 st.title("🧭 Knowledge Quest")
-st.caption("Save the City of Knowledge • 5 Levels • 30 Mins Mission • Age 12")
+st.caption("Save the City of Knowledge • 5 Levels • 30 Mins Mission • Age 10+")
 
 # --- Game Data ---
 LEVELS = [
